@@ -15,6 +15,7 @@ work = False
 start_time = 0
 elapsed_time = 0
 
+#заупск и остановка на клвишу '/'
 keyboard.add_hotkey('/', change)
 
 while True:
@@ -28,7 +29,7 @@ while True:
             time.sleep(900)  # 15 минут отдыха
             print("Возобновление работы")
             work = True
-            start_time = time.time()  # Перезапуск таймера
+            start_time = time.time()
             elapsed_time = 0
 
         mouse.click(button='left')
